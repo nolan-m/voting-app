@@ -8,7 +8,7 @@ const win = doc.defaultView;
 global.document = doc;
 global.window = win;
 
-Objet.keys(window).forEach((key) => {
+Object.keys(window).forEach((key) => {
 	if (!(key in global)) {
 		global[key] = window[key];
 	}
